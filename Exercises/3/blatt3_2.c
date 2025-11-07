@@ -1,15 +1,5 @@
 #include <stdio.h>
 
-// 1) Letzte Ziffer gleich
-void last_digit() {
-    int a, b;
-    scanf("%d %d", &a, &b);
-    if (a % 10 == b % 10) {
-        printf("Letzte Ziffer gleich");
-    }
-    printf("\n");
-}
-
 // 2.a) Alle Zahlen von 100 bis 200
 void print_100_to_200() {
     for (int i = 100; i <= 200; i++) {
@@ -52,7 +42,6 @@ void number_7_inside() {
     int a;
     scanf("%d", &a);
     if (a < 0) a = -a;
-
     while (a > 0) {
         if (a % 10 == 7) {
             printf("true\n");
@@ -80,22 +69,7 @@ void count_number_7_inside() {
 }
 
 
-
-// 3) Lösung von Gleichungen
-void Losung_von_Gleichungen (){
-  for (int i = 1; i <= 100; i++){
-    if (i*i*i - 73*i*i+ 1655*i - 11951 == 0){
-      printf("%d\n", i);
-    }
-  }
-}
-
-
-
-
-
 int main() {
-    last_digit();
     print_100_to_200();
     print_even_111_to_222();
     print_div3_333_to_222();
